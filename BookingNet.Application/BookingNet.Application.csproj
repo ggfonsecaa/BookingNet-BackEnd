@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="ErrorOr" Version="1.2.1" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookingNet.Domain\BookingNet.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\FlowServices\Commands\Update\Partial\" />
+    <Folder Include="Services\FlowServices\Queries\Search\" />
+    <Folder Include="Services\BookingServices\Commands\Delete\" />
+    <Folder Include="Services\BookingServices\Commands\Update\Partial\" />
+    <Folder Include="Services\BookingServices\Queries\Search\" />
+    <Folder Include="Services\NotificationServices\Commands\Create\" />
+    <Folder Include="Services\NotificationServices\Commands\Delete\" />
+    <Folder Include="Services\NotificationServices\Commands\Update\Full\" />
+    <Folder Include="Services\NotificationServices\Commands\Update\Partial\" />
+    <Folder Include="Services\NotificationServices\Queries\Read\Single\" />
+    <Folder Include="Services\NotificationServices\Queries\Search\" />
+    <Folder Include="Services\RoleServices\Commands\Update\Partial\" />
+    <Folder Include="Services\RoleServices\Queries\Search\" />
+    <Folder Include="Services\UserGroupServices\Commands\Delete\" />
+    <Folder Include="Services\UserGroupServices\Commands\Update\" />
+    <Folder Include="Services\UserGroupServices\Queries\Read\Single\" />
+    <Folder Include="Services\UserGroupServices\Queries\Search\" />
+  </ItemGroup>
+
+</Project>
